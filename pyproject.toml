@@ -11,4 +11,4 @@ dependencies = [
     "langchain-google-genai>=4.2.0",
 ]
 [project.scripts]
-run_crew = "sass_growth_crew.main:run"
+run_crew = "main:run"

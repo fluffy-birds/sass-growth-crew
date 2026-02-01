@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 # 1. Load the .env file immediately
 load_dotenv()
 
-from sass_growth_crew.crew import SassGrowthCrew
+from crew import SassGrowthCrew
 
 def run():
     # Load brand context from AGENTS.md inside the function
