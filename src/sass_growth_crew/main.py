@@ -14,6 +14,12 @@ sys.path.append(str(Path(__file__).parent.parent))
 from sass_growth_crew.crew import SassGrowthCrew
 
 def run():
+# Pull context from the AGENTS.md file
+    try:
+        with open("AGENTS.md", "r") as f:
+            agent_spec = f.read()
+    except FileNotFoundError:
+        agent_spec = "Sassafras Garden Design positions itself as an ecological educator and consultant rather than a traditional landscaping firm, aiming to help clients understand and manage their own ecosystems."
     """
     Run the crew to find leads for Sassafras Garden Design.
     """
@@ -27,7 +33,8 @@ def run():
     inputs = {
         'location': 'Essex County, MA',
         'target_towns': 'Manchester-by-the-Sea, Beverly, Hamilton, Wenham, Marblehead, Swampscott',
-        'year': '2026'
+        'year': '2026',
+        'brand_context': agent_spec
     }
     
     print(f"## Starting Sassafras Growth Crew for {inputs['location']}...")

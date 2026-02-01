@@ -12,7 +12,7 @@ def test_trace():
     
     # 2. Use the model we know works for your account
     llm = ChatGoogleGenerativeAI(
-        model="models/gemini-2.5-flash", 
+        model="models/gemini-1.5-flash", 
         google_api_key=os.getenv("GOOGLE_API_KEY")
     )
 
