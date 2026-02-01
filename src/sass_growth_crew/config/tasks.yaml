@@ -1,0 +1,19 @@
+research_task:
+  description: >
+    Using the Serper tool, identify 5 high-end residential architects and 5 luxury 
+    home builders active in {location}, with a focus on {target_towns}. 
+    Look for firms whose recent portfolios (from {year}) feature expansive 
+    outdoor spaces that would benefit from Sassafras Garden Design's aesthetic.
+  expected_output: >
+    A list of 10 verified firms with their website URLs and a brief note on 
+    their project style or most recent high-end development.
+  agent: research_specialist
+
+outreach_strategy_task:
+  description: >
+    Using the research provided, draft a 2-paragraph "value proposition" for each 
+    category (Architects vs. Builders). Explain why partnering with Sassafras Garden Design 
+    benefits their clients and their portfolio.
+  expected_output: >
+    A strategic document with categorized outreach templates.
+  agent: partnership_strategist

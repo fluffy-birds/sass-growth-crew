@@ -1,0 +1,19 @@
+# .env
+MODEL=gemini/gemini-2.5-flash
+GOOGLE_API_KEY=key_here
+SERPER_API_KEY=key_here
+OPENAI_API_KEY=sk-placeholder-not-used
+LANGSMITH_ENDPOINT=https://api.smith.langchain.com
+LANGCHAIN_API_KEY=key_here
+LANGCHAIN_TRACING_V2=true
+LANGCHAIN_PROJECT="Sassafras-Growth-Crew"
+
+# Rate Limits (RPM = Requests Per Minute)
+# Keep these low for Dev/Free Tier, increase for Production
+CREW_MAX_RPM=4
+RESEARCHER_MAX_RPM=2
+STRATEGIST_MAX_RPM=2
+
+# Safety Guardrails
+MAX_ITER=10
+CREW_VERBOSE=true
